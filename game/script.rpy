@@ -23,5 +23,5 @@ label start:
     
 
 
-    "thanks for playing!"
+    "thanks for playing!!"
     return
