@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 17: expected statement.
+    name = renpy.input("Enter your name:")
+         ^
+
+File "game/script.rpy", line 20: expected statement.
+    player = Character("[name]", color="#25ffed",what_size = talkFont)
+           ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Wed Feb 19 22:03:29 2025
