@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 17: expected statement.
-    name = renpy.input("Enter your name:")
-         ^
-
-File "game/script.rpy", line 20: expected statement.
-    player = Character("[name]", color="#25ffed",what_size = talkFont)
-           ^
+File "game/scene3InsideFuneral.rpy", line 70: choice menuitem expects a non-empty block.
+    "Look at Mia to calm down":
+                               ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Feb 19 22:03:29 2025
+Mon Feb 24 21:03:01 2025

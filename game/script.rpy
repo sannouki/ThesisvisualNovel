@@ -1,6 +1,4 @@
-﻿define talkFont = 24
-define yellFont = 34
-
+﻿
 label start:
 
     #setting up the player.
@@ -18,6 +16,7 @@ label start:
 
     # Jump to Scene 1 - scene1funeral.rpy
     play music "donkey remix.mp3"
+    $ renpy.music.set_volume(0.1, 0.0, channel="music")  # Set volume to 20% immediately
     jump scene_1
     stop music fadeout 2.0
     

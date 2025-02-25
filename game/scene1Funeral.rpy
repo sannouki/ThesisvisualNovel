@@ -2,11 +2,9 @@
 
 # Define Fonts (Ensure these are declared before character definitions)
 define talkFont = 24
-define yellFont = 34
 
 # Define Characters
 define silas = Character("Silas", color="#ff5252", what_size=talkFont)
-define playerYell = Character("Player", color="#25ffed", what_size=yellFont)
 
 label scene_1:
     scene bg forest
@@ -53,16 +51,21 @@ label scene_1:
     "I glance at the large decrepit church, taking a breath."
     show SilasImageSerious
     silas "Are you ready?"
-    
+
+    #this boolean will help skip a section of the story.
+    default Transitions = False
+
     menu:
         "Yes.": 
-            player "Yes."
+            silas "Ok, let's go. Let me know if it gets to be too much for you."
+            $ Transitions = True
         "No.": 
-            player "No."
-    
-    silas "Let me know if it gets to be too much for you."
-    
-    "Silas has been my best friend since before I can remember. He's usually much less serious, always teasing and joking with me. It's jarring to see him like this."
+            player "I don't think I can do this, I'm not ready to face all those people..."
+
+    if Transitions == True:
+        jump scene_3
+
+    silas "Silas has been my best friend since before I can remember. He's usually much less serious, always teasing and joking with me. It's jarring to see him like this."
     "We walk inside to attend the funeral."
     
     player "I don't think I can do this, I'm not ready to face all those people."
